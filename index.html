@@ -1,169 +1,26 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTT Player - NeckleNJ</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            overflow-x: hidden;
-        }
-        .navbar {
-            background-color: #ffcc00;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        .navbar h1 {
-            font-size: 24px;
-            color: #1a1a1a;
-        }
-        .navbar a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: bold;
-            margin-left: 20px;
-        }
-        .navbar a:hover {
-            color: #fff;
-        }
-        .hero {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        .hero h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #ffcc00;
-        }
-        .hero p {
-            font-size: 18px;
-            max-width: 600px;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        .cta-button {
-            background-color: #ffcc00;
-            color: #1a1a1a;
-            padding: 15px 30px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        .cta-button:hover {
-            background-color: #e6b800;
-            transform: scale(1.05);
-        }
-        .features {
-            padding: 40px 20px;
-            background-color: rgba(255, 255, 255, 0.05);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .feature-card {
-            background-color: #2c2c2c;
-            padding: 20px;
-            border-radius: 10px;
-            width: 250px;
-            text-align: center;
-        }
-        .feature-card h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #ffcc00;
-        }
-        .feature-card p {
-            font-size: 14px;
-        }
-        .footer {
-            background-color: #1a1a1a;
-            padding: 20px;
-            text-align: center;
-            font-size: 16px;
-        }
-        .shop-name {
-            font-weight: bold;
-            color: #ffcc00;
-        }
-        @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 28px;
-            }
-            .hero p {
-                font-size: 16px;
-            }
-            .navbar h1 {
-                font-size: 20px;
-            }
-            .navbar a {
-                font-size: 14px;
-            }
-        }
-    </style>
+    <title>Live TV Gratis</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <h1>OTT Player</h1>
-        <div>
-            <a href="#features">Ciri-Ciri</a>
-            <a href="https://shopee.com.my/necklenj" target="_blank">Shopee</a>
+    <header>
+        <h1>Live TV Gratis</h1>
+        <nav>
+            <ul id="channel-list"></ul>
+        </nav>
+    </header>
+    <main>
+        <div id="player-container">
+            <iframe id="tv-player" src="" frameborder="0" allowfullscreen></iframe>
         </div>
-    </div>
-    <div class="hero">
-        <h2>Selamat Datang ke OTT Player</h2>
-        <p>Nikmati pengalaman menonton terbaik dengan saluran kegemaran anda, kemas kini harian, dan akses kepada pelbagai kandungan premium!</p>
-        <a href="https://shopee.com.my/necklenj" target="_blank" class="cta-button">Beli Sekarang di Shopee</a>
-    </div>
-    <div class="features" id="features">
-        <div class="feature-card">
-            <h3>Kemas Kini Harian</h3>
-            <p>Saluran dan kandungan sentiasa dikemas kini setiap hari untuk pengalaman menonton tanpa gangguan.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Kualiti Tinggi</h3>
-            <p>Strim dalam resolusi tinggi dengan kelajuan dan kestabilan yang dioptimumkan.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Pelbagai Saluran</h3>
-            <p>Akses pelbagai saluran tempatan dan antarabangsa termasuk Astro, Unifi TV, dan banyak lagi.</p>
-        </div>
-    </div>
-    <div class="footer">
-        <span class="shop-name">Beli di kedai Shopee NeckleNJ</span> | &copy; 2025 OTT Player
-    </div>
-
-    <script>
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    </main>
+    <footer>
+        <p>&copy; 2025 Live TV Gratis. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
