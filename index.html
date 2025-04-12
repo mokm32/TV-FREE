@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Streaming Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background-color: #ddd;
+        }
+        .channels {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .channel-card {
+            background-color: white;
+            margin: 1rem;
+            padding: 1rem;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TV Malaysia Live</h1>
+        <p>Watch your favorite Malaysian channels for free!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#channels">Channels</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Stream Live TV Online</h2>
+        <p>Enjoy TV1, TV2, TV3, and more anytime, anywhere.</p>
+        <button onclick="alert('Start streaming now!')">Watch Now</button>
+    </section>
+    <section class="channels">
+        <div class="channel-card">
+            <h3>TV1</h3>
+            <p>News and entertainment</p>
+            <a href="#">Watch</a>
+        </div>
+        <div class="channel-card">
+            <h3>TV2</h3>
+            <p>Dramas and variety shows</p>
+            <a href="#">Watch</a>
+        </div>
+        <div class="channel-card">
+            <h3>TV3</h3>
+            <p>Popular shows and movies</p>
+            <a href="#">Watch</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 TV Malaysia Live. All rights reserved.</p>
+    </footer>
+</body>
+</html>
